@@ -1,0 +1,14 @@
+package lesson4;
+
+import java.util.Scanner;
+
+public class ex3 {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int m=sc.nextInt();
+        int k=sc.nextInt();
+        String answer = k <= n * m && (k % n == 0 && k >= n || k % m == 0 && k >= m) ? "YES" : "NO";
+        System.out.println(answer);
+    }
+}
