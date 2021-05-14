@@ -1,0 +1,15 @@
+package lesson10;
+
+class Primitive {
+    public static boolean toPrimitive(Boolean b) {
+        if(b!=null)
+            return b;
+        else return false;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(Primitive.toPrimitive(null));
+        System.out.println(Primitive.toPrimitive(false));
+        System.out.println(Primitive.toPrimitive(true));
+    }
+}
