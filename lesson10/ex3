@@ -1,0 +1,11 @@
+package lesson10;
+
+enum Currency {
+    USD, EUR, GBP, RUB, UAH, KZT, CAD, JPY, CNY;
+
+    public static void main(String[] args) {
+        for (Currency value : Currency.values()) {
+            System.out.println(value.name());
+        }
+    }
+}
