@@ -1,0 +1,12 @@
+package lesson8;
+
+public class Box {
+    double lenght;
+    double height;
+    double widht;
+    Box innerBox;
+
+    public static void main(String[] args) {
+        Box b=new Box();
+    }
+}
