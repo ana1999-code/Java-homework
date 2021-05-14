@@ -1,0 +1,21 @@
+package lesson9;
+
+class Counter {
+
+    int current;
+
+    public void inc(){
+        current++;
+    }
+
+    public int getCurrent(){
+        return current;
+    }
+
+    public static void main(String[] args) {
+        Counter c=new Counter();
+        System.out.println(c.getCurrent());
+        c.inc();
+        System.out.println(c.getCurrent());
+    }
+}
