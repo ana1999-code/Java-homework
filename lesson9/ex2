@@ -1,0 +1,15 @@
+package lesson9;
+
+class Patient {
+    String name;
+
+    public void say(){
+        System.out.println("Hello, my name is "+name+", I need a doctor.");
+    }
+
+    public static void main(String[] args) {
+        Patient p=new Patient();
+        p.name="Mike";
+        p.say();
+    }
+}
