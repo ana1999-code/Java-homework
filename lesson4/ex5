@@ -1,0 +1,32 @@
+package lesson4;
+
+import java.util.*;
+
+public class ex5 {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        String shape=sc.next();
+        double a, b;
+        switch (shape){
+            case "triangle":
+                a=sc.nextDouble();
+                b=sc.nextDouble();
+                double c=sc.nextDouble();
+                double p=(a+b+c)/2;
+                double s=Math.sqrt(p*(p-a)*(p-b)*(p-c));
+                System.out.println(s);
+                break;
+            case "rectangle":
+                a=sc.nextDouble();
+                b=sc.nextDouble();
+                System.out.println(a*b);
+                break;
+            case "circle":
+                double r=sc.nextDouble();
+                System.out.println(Math.pow(r,2)*3.14);
+                break;
+            default:
+                System.out.println("no such shape!");
+        }
+    }
+}
