@@ -1,0 +1,31 @@
+package lesson4;
+
+import java.util.Scanner;
+
+public class ex6 {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        String m="move";
+        int n= sc.nextInt();
+        switch (n){
+            case 1:
+                m+=" up";
+                break;
+            case 2:
+                m+=" down";
+                break;
+            case 3:
+                m+=" left";
+                break;
+            case 4:
+                m+=" right";
+                break;
+            case 5:
+                m="do not "+m;
+                break;
+            default:
+                m="error!";
+        }
+        System.out.println(m);
+    }
+}
