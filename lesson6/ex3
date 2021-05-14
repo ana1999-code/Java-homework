@@ -1,0 +1,40 @@
+package lesson6;
+
+import java.util.Scanner;
+
+public class ex3 {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        String s1=new String(sc.nextLine());
+        String s2=new String(sc.nextLine());
+        char[] c1=s1.toCharArray();
+        char[] c2=s2.toCharArray();
+        int l1=c1.length;
+        int l2=c2.length;
+        for(int i=0;i<c1.length;i++)
+            if(c1[i]==' ')
+                l1--;
+        for(int i=0;i<c2.length;i++)
+            if(c2[i]==' ')
+                l2--;
+            char[] c11=new char[l1];
+            char[] c22=new char[l2];
+            for(int i=0, j=0;i<c1.length;i++,j++)
+            { if(c1[i]==' ')
+                    j--;
+                else
+                c11[j]=c1[i];
+                }
+        for(int i=0,j=0;i<c2.length;i++,j++)
+        {   if(c2[i]==' ')
+            j--;
+            else
+            c22[j]=c2[i];
+           }
+        String s11=String.valueOf(c11);
+        String s22=String.valueOf(c22);
+        System.out.println(s11.equals(s22));
+
+
+    }
+}
