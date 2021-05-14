@@ -1,0 +1,15 @@
+package lesson11;
+
+class BankAccount {
+    protected String number;
+    protected Long balance;
+
+    public BankAccount(String number, Long balance) {
+        this.number = number;
+        this.balance = balance;
+    }
+
+    public void print(){
+        System.out.println("Number: "+number+"\nBalance: "+balance);
+    }
+}
