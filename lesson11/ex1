@@ -1,0 +1,17 @@
+package lesson11;
+
+public class ex1 {
+    class Person{
+        protected String name;
+        protected int birthDate;
+    }
+    class Employee extends Person{
+        protected double salary;
+    }
+    class Doctor extends Employee{
+        private String specialization;
+    }
+    class Patient extends Person{
+        private String illness;
+    }
+}
