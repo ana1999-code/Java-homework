@@ -1,0 +1,33 @@
+package lesson8;
+
+public class Employee {
+    String name;
+    int salary;
+    String address;
+
+    public Employee(){
+        //this("unknown",0 ,"unknown");
+        String name = "unknown";
+        int salary = 0;
+        String address = "unknown";
+    }
+
+    public Employee(String name, int salary){
+
+       // this(name, salary, "unknown");
+        this.name=name;
+        this.salary=salary;
+        address="unknown";
+    }
+
+    public Employee(String name, int salary, String address){
+        //this(name, salary, address);
+        this.name=name;
+        this.salary=salary;
+        this.address=address;
+    }
+
+    public static void main(String[] args) {
+        Employee emp=new Employee();
+    }
+}
