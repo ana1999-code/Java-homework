@@ -1,0 +1,11 @@
+package lesson8;
+
+public class Account {
+    private long balance;
+    private String ownerName;
+    private boolean locked;
+
+    public static void main(String[] args) {
+        Account ac=new Account();
+    }
+}
