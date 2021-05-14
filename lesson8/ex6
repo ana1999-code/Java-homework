@@ -1,0 +1,19 @@
+package lesson8;
+
+public class Book {
+    String title;
+    int yearOfPublishing;
+    String[] authors;
+    Book(){
+        title="unkown";
+        yearOfPublishing=2000;
+        authors=new String[2];
+        for (int i=0;i< authors.length;i++)
+            authors[i]="unknown";
+    }
+
+    public static void main(String[] args) {
+        Book book=new Book();
+    }
+
+}
