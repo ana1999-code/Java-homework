@@ -1,0 +1,13 @@
+package lesson11;
+
+public class Main {
+    public static void main(String[] args) {
+        BankAccount bankAccount=new BankAccount("123",3500l);
+        CheckingAccount checkingAccount=new CheckingAccount("456",5432l,2300);
+        SavingAccount savingAccount=new SavingAccount("789",5600l,34);
+
+        bankAccount.print();
+        checkingAccount.print();
+        savingAccount.print();
+    }
+}
