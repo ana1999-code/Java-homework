@@ -1,0 +1,19 @@
+package lesson4;
+
+import java.util.Scanner;
+
+public class ex2 {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int unit=sc.nextInt();
+        if(unit<1)
+            System.out.println("No army");
+        else if(unit<=19)
+            System.out.println("Pack");
+        else if(unit<=249)
+            System.out.println("Throng");
+        else if(unit<=999)
+            System.out.println("Zounds");
+        else System.out.println("Legion");
+    }
+}
