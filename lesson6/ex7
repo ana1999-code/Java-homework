@@ -1,0 +1,12 @@
+package lesson6;
+
+import java.util.Scanner;
+
+public class ex7 {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        String s=new String(sc.nextLine());
+        String str=new String(s.substring(0,1));
+        System.out.println(str.equalsIgnoreCase("j"));
+    }
+}
