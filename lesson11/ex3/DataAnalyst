@@ -1,0 +1,23 @@
+package lesson11;
+
+class DataAnalyst extends Employee{
+    private boolean phd;
+    private String[] methods;
+
+    DataAnalyst(String name, String email, int experience, boolean phd, String[] methods){
+        super(name,email,experience);
+        this.phd=phd;
+        this.methods=new String[methods.length];
+
+        for (int i=0;i< methods.length;i++)
+            this.methods[i]=methods[i];
+    }
+
+    public boolean isPhd(){
+        return phd;
+    }
+
+    public String[] getMethods(){
+        return methods;
+    }
+}
