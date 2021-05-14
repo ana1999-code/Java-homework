@@ -1,0 +1,24 @@
+package lesson7;
+
+import java.util.Scanner;
+
+public class ex2 {
+    public static boolean isVowel(char ch) {
+        return (ch=='A'||ch=='a'||ch=='O'||ch=='o'||ch=='E'||ch=='e'||ch=='U'||ch=='u'||ch=='I'||ch=='i');
+        /*
+        char[] vowels = {'a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'};
+        for (char v: vowels) {
+            if (v == ch) {
+                return true;
+            }
+        }
+        return false;
+         */
+    }
+    /* Do not change code below */
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        char letter = scanner.nextLine().charAt(0);
+        System.out.println(isVowel(letter) ? "YES" : "NO");
+    }
+}
