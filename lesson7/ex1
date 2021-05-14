@@ -1,0 +1,18 @@
+package lesson7;
+
+import java.util.Scanner;
+
+public class ex1 {
+    public static int extractInt(double d) {
+       /* int n=(int)d;
+       return n;
+        */
+        return (int)d;
+    }
+    /* Do not change code below */
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        double d = scanner.nextDouble();
+        System.out.println(extractInt(d));
+    }
+}
