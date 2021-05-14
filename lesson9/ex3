@@ -1,0 +1,23 @@
+package lesson9;
+
+class Clock{
+    int hours=10;
+    int minutes=59;
+
+    public void next(){
+        if(minutes<59)
+            minutes++;
+        else {
+            minutes=0;
+            if(hours<12)
+            hours++;
+            else hours=1;
+        }
+    }
+
+    public static void main(String[] args) {
+        Clock c=new Clock();
+        c.next();
+        System.out.println(c.hours+":"+c.minutes);
+    }
+}
