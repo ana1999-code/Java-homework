@@ -1,0 +1,10 @@
+package lesson8;
+
+public class Complex {
+    private double real;
+    private double imaginary;
+
+    public static void main(String[] args) {
+        Complex c=new Complex();
+    }
+}
