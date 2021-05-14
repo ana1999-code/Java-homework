@@ -1,0 +1,25 @@
+package lesson9;
+
+ class Cat {
+     String name;
+     int age;
+     static int counter;
+
+     Cat(String name, int age){
+         this.name=name;
+         this.age=age;
+         counter++;
+         if(counter>5)
+             System.out.println("You have too many cats");
+     }
+     public static int getNumberOfCats(){
+         return counter;
+     }
+
+     public static void main(String[] args) {
+         Cat[] cats=new Cat[7];
+         for (int i=0;i<cats.length;i++)
+             cats[i]=new Cat("Tom",1);
+         System.out.println(Cat.getNumberOfCats());
+     }
+}
