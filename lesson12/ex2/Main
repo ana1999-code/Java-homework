@@ -1,0 +1,15 @@
+package lesson12;
+
+public class Main {
+    public static void main(String[] args) {
+        Publication publication=new Publication("The new era");
+        Newspaper newspaper=new Newspaper("Football results","Sport news");
+        Article article=new Article("Why the Sun is hot","DR James Smith");
+        Announcement announcement=new Announcement("Will sell a house",30);
+
+        System.out.println(publication.getInfo());
+        System.out.println(newspaper.getInfo());
+        System.out.println(article.getInfo());
+        System.out.println(announcement.getInfo());
+    }
+}
