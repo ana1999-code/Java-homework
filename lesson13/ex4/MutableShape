@@ -1,0 +1,4 @@
+package lesson13.ex4;
+
+public interface MutableShape extends Movable, Scalable {
+}
