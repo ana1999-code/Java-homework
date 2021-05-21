@@ -1,0 +1,22 @@
+package lesson13;
+
+public class WebSite extends BaseEntity{
+    protected String url;
+
+   /* public WebSite(long id, long version, String url) {
+        super(id, version);
+        this.url = url;
+    }*/
+
+    public String getUrl() {
+        return url;
+    }
+
+    public void setUrl(String url) {
+        this.url = url;
+    }
+
+    public String toString(){
+        return "Website{id="+id+", version="+version+", url="+url+"}";
+    }
+}
