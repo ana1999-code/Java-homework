@@ -1,0 +1,22 @@
+package lesson13;
+
+public class User extends BaseEntity{
+    protected String name;
+
+   /* public User(long id, long version, String name) {
+        super(id, version);
+        this.name = name;
+    }*/
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String toString(){
+       return "User{id="+id+", version="+version+", name="+name+"}";
+    }
+}
