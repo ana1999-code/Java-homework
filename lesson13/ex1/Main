@@ -1,0 +1,17 @@
+package lesson13;
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int x=sc.nextInt();
+        int y=sc.nextInt();
+
+        Addition addition=new Addition(x,y);
+        Multiplication multiplication=new Multiplication(x,y);
+
+        System.out.println(addition.perform());
+        System.out.println(multiplication.perform());
+    }
+}
