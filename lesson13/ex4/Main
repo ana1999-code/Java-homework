@@ -1,0 +1,21 @@
+package lesson13.ex4;
+
+public class Main {
+    public static void main(String[] args) {
+        MutableShape circle = new Circle(2.0f, 3.5f, 10.1f);
+        circle.move(10.1f, 20.2f);
+        circle.scale(2.2f);
+        System.out.println(((Circle) circle).getCenterX());
+        System.out.println(((Circle) circle).getCenterY());
+        System.out.println(((Circle) circle).getRadius());
+
+        MutableShape rectangle = new Rectangle(5.0f, 10.0f, 3.0f, 2.0f);
+        rectangle.move(2.0f, 1.0f);
+        rectangle.scale(4.0f);
+        System.out.println(((Rectangle) rectangle).getX());
+        System.out.println(((Rectangle) rectangle).getY());
+        System.out.println(((Rectangle) rectangle).getWidth());
+        System.out.println(((Rectangle) rectangle).getHeight());
+
+    }
+}
