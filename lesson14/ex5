@@ -1,0 +1,17 @@
+package lesson14;
+
+import java.util.Scanner;
+import java.util.function.UnaryOperator;
+class PrefixSuffixOperator {
+    public static final String PREFIX = "__pref__";
+    public static final String SUFFIX = "__suff__";
+    public static UnaryOperator<String> operator =x->{
+        x.trim();
+        return PREFIX+x+SUFFIX;};
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        String x=sc.next();
+        System.out.println(operator.apply(x));
+    }
+}
