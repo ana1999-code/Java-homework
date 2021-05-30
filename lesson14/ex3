@@ -1,0 +1,14 @@
+package lesson14;
+
+import java.util.Scanner;
+import java.util.function.IntBinaryOperator;
+class Operator {
+    public static IntBinaryOperator binaryOperator= (x,y)->{return (x>y)?x:y;};
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int x = sc.nextInt();
+        int y = sc.nextInt();
+        System.out.println(binaryOperator.applyAsInt(x, y));
+    }
+}
