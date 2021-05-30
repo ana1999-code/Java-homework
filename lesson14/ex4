@@ -1,0 +1,16 @@
+package lesson14;
+
+import java.util.Scanner;
+import java.util.function.DoubleUnaryOperator;
+class Operator {
+    public static int a = 10;
+    public static int b = 20;
+    public static int c = 30;
+    public static DoubleUnaryOperator unaryOperator =(double x)->a*Math.pow(x,2)+b*x+c*x;
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        double x=sc.nextDouble();
+        System.out.println(unaryOperator.applyAsDouble(x));
+    }
+}
