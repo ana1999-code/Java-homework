@@ -1,0 +1,22 @@
+package lesson14;
+
+class Cake{}
+class Pie{}
+class Tart{}
+public class Box<T> {
+    private T box;
+
+    public T getBox() {
+        return box;
+    }
+
+    public void setBox(T box) {
+        this.box = box;
+    }
+
+    public static void main(String[] args) {
+        Box<Cake> cake= new Box<>();
+        Box<Pie> pie=new Box<>();
+        Box<Tart> tart=new Box<>();
+    }
+}
